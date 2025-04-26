@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Brainrot Clicker - The Viral Meme Clicker Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .game-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .brainrot-bg {
+            background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .header-glow {
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+        }
+        
+        .btn-brainrot {
+            background: linear-gradient(to right, #FF3366, #FF8C66, #FFCC33);
+            background-size: 200% auto;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-brainrot:hover {
+            background-position: right center;
+            transform: translateY(-2px);
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .character-card {
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.85);
+        }
+        
+        .character-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .locked-feature {
+            filter: grayscale(80%);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body class="brainrot-bg min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <div class="flex justify-center items-center mb-4">
+                <i class="fas fa-brain text-4xl text-purple-500 mr-4 floating"></i>
+                <h1 class="text-5xl font-bold text-white header-glow">Italian Brainrot Clicker</h1>
+                <i class="fas fa-mouse-pointer text-4xl text-yellow-300 ml-4 floating" style="animation-delay: 0.5s;"></i>
+            </div>
+            <div class="flex justify-center items-center space-x-6 mb-4">
+                <span class="text-yellow-300 text-xl"><i class="fas fa-star mr-1"></i> 8.4 (39,700 votes)</span>
+                <span class="text-white text-xl"><i class="fas fa-calendar-alt mr-1"></i> Released: April 2025</span>
+                <span class="text-white text-xl"><i class="fas fa-sync-alt mr-1"></i> Last Updated: April 2025</span>
+            </div>
+            <p class="text-xl text-white max-w-2xl mx-auto bg-black bg-opacity-50 p-4 rounded-lg">
+                A chaotic meme clicker incremental game where you tap your way through the viral Italian Brainrot universe!
+            </p>
+        </header>
+        
+        <!-- Game Container -->
+        <div class="max-w-4xl mx-auto mb-8">
+            <div class="game-container">
+                <iframe src="https://www.crazygames.com/embed/italian-brainrot-clicker-usp" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <!-- Game Info -->
+        <div class="bg-white bg-opacity-90 rounded-xl p-6 max-w-6xl mx-auto mb-8 shadow-xl">
+            <h2 class="text-3xl font-bold text-purple-600 mb-4 flex items-center">
+                <i class="fas fa-info-circle mr-3"></i> About The Game
+            </h2>
+            <p class="text-gray-700 mb-6">
+                Italian Brainrot Clicker is a chaotic meme clicker incremental game where you tap your way through the viral Italian Brainrot universe, unlocking all the brainrot characters and upgrades as you progress! You will get the chance to collect Italian Brainrot characters such as:
+            </p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+                <div class="character-card p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-purple-600">Bombardino Crocodilo</h3>
+                    <p class="text-sm">Crocodile fused with a bomber plane</p>
+                </div>
+                <div class="character-card p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-purple-600">Tung Tung Tung Sahur</h3>
+                    <p class="text-sm">Heavily memeified with rhythm chants</p>
+                </div>
+                <div class="character-card p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-purple-600">Tralalero Tralala</h3>
+                    <p class="text-sm">Shark wearing Nike shoes</p>
+                </div>
+                <div class="character-card p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-purple-600">Bombombini Gussini</h3>
+                    <p class="text-sm">Bombardiro Crocodilos' brother</p>
+                </div>
+                <div class="character-card p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-purple-600">Cappuccino Assasino</h3>
+                    <p class="text-sm">Dual-katana-wielding master</p>
+                </div>
+                <div class="character-card p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-purple-600">Lirili Larila</h3>
+                    <p class="text-sm">Wandering desert elephant</p>
+                </div>
+                <div class="character-card p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-purple-600">Brr Brr Patapim</h3>
+                    <p class="text-sm">From a windy forest full of whimsy</p>
+                </div>
+                <div class="character-card p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg text-purple-600">Burbaloni Luliloli</h3>
+                    <p class="text-sm">Mythical coconut with capybara</p>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-bold text-purple-600 mb-3">How to Play</h3>
+            <p class="text-gray-700 mb-4">
+                The aim is to click as much as possible to unlock upgrades and rewards. The more you click, the more you earn, the more you can upgrade.
+            </p>
+            
+            <div class="bg-purple-50 p-4 rounded-lg mb-6">
+                <h4 class="font-bold text-lg text-purple-600 mb-2">Starting Point</h4>
+                <p class="text-gray-700">
+                    You start with one skin (Tralalero Tralala) and one weather (Normal). Click to the next level to unlock Bombardino Crocodillo around 200 clicks. Around 1000 coins, you'll unlock rain weather!
+                </p>
+            </div>
+            
+            <h3 class="text-2xl font-bold text-purple-600 mb-3">Upgrades</h3>
+            <div class="grid md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-lg text-yellow-600 mb-2">💰 Coin Upgrades</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                        <li><span class="font-semibold">50 coins:</span> Cursor, +1 Brainrot per click</li>
+                        <li><span class="font-semibold">125 coins:</span> Auto Click, +1 Brainrot per second</li>
+                        <li><span class="font-semibold">500 coins:</span> Mr Clicker, +5 Brainrot per click</li>
+                        <li><span class="font-semibold">1,100 coins:</span> Trallero Trallala Farm, +6 Brainrot per second</li>
+                        <li><span class="font-semibold">12,000 coins:</span> Mystery reward</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-lg text-blue-600 mb-2">🌤️ Weather Upgrades</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="p-2 rounded bg-green-100">
+                            <i class="fas fa-check-circle text-green-500 mr-1"></i> Normal
+                        </div>
+                        <div class="p-2 rounded bg-gray-100 locked-feature">
+                            <i class="fas fa-lock text-gray-500 mr-1"></i> Rain
+                        </div>
+                        <div class="p-2 rounded bg-gray-100 locked-feature">
+                            <i class="fas fa-lock text-gray-500 mr-1"></i> Sunny
+                        </div>
+                        <div class="p-2 rounded bg-gray-100 locked-feature">
+                            <i class="fas fa-lock text-gray-500 mr-1"></i> Star Rain
+                        </div>
+                        <div class="p-2 rounded bg-gray-100 locked-feature">
+                            <i class="fas fa-lock text-gray-500 mr-1"></i> Windy
+                        </div>
+                        <div class="p-2 rounded bg-gray-100 locked-feature">
+                            <i class="fas fa-lock text-gray-500 mr-1"></i> Snowing
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-bold text-purple-600 mb-3">Controls</h3>
+            <p class="text-gray-700 mb-2">
+                <i class="fas fa-mouse-pointer text-purple-500 mr-2"></i> Use the left mouse button to play and interact with the in-game UI
+            </p>
+            
+            <h3 class="text-2xl font-bold text-purple-600 mt-6 mb-3">FAQ</h3>
+            <div class="space-y-4">
+                <div>
+                    <h4 class="font-bold text-purple-600">What is a brainrot meme?</h4>
+                    <p class="text-gray-700">Several brainrot memes have gone viral on TikTok. Check out Italian Brainrot Clicker game to discover which one you know.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-purple-600">What does brainrot mean?</h4>
+                    <p class="text-gray-700">Brainrot is a concept used to describe when someone repeats a viral trend, but doesn't quite know why they are doing so.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-purple-600">Can I play Italian Brainrot Clicker on my phone?</h4>
+                    <p class="text-gray-700">You can play Italian Brainrot Clicker on your phone or most other devices.</p>
+                </div>
+            </div>
+            
+            <div class="mt-6 pt-4 border-t border-gray-200">
+                <p class="text-sm text-gray-500"><i class="fas fa-history mr-1"></i> Last Updated: Apr 16, 2025</p>
+            </div>
+        </div>
+        
+        <!-- Controls -->
+        <div class="text-center mt-8">
+            <button onclick="toggleFullscreen()" class="btn-brainrot text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg hover:shadow-xl transition-all">
+                <i class="fas fa-expand mr-2"></i> Fullscreen Mode
+            </button>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-white text-opacity-80">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-facebook text-2xl"></i></a>
+                <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-twitter text-2xl"></i></a>
+                <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-tiktok text-2xl"></i></a>
+                <a href="#" class="hover:text-yellow-300 transition"><i class="fab fa-discord text-2xl"></i></a>
+            </div>
+            <p>© 2025 Italian Brainrot Clicker - All rights reserved</p>
+            <p class="text-sm mt-2">Game hosted by CrazyGames | Technology: HTML5 (Unity WebGL)</p>
+        </footer>
+    </div>
+
+    <script>
+        // Toggle fullscreen function
+        function toggleFullscreen() {
+            const iframe = document.querySelector('iframe');
+            
+            if (!document.fullscreenElement) {
+                if (iframe.requestFullscreen) {
+                    iframe.requestFullscreen();
+                } else if (iframe.webkitRequestFullscreen) {
+                    iframe.webkitRequestFullscreen();
+                } else if (iframe.msRequestFullscreen) {
+                    iframe.msRequestFullscreen();
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+        
+        // Add confetti effect on header click
+        document.querySelector('header').addEventListener('click', function() {
+            const colors = ['#FF3366', '#FF8C66', '#FFCC33', '#9933FF', '#33FFCC'];
+            
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.style.position = 'fixed';
+                confetti.style.width = '10px';
+                confetti.style.height = '10px';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.borderRadius = '50%';
+                confetti.style.left = Math.random() * window.innerWidth + 'px';
+                confetti.style.top = '-10px';
+                confetti.style.zIndex = '9999';
+                confetti.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+                
+                document.body.appendChild(confetti);
+                
+                const animation = confetti.animate([
+                    { top: '-10px', opacity: 1 },
+                    { top: window.innerHeight + 'px', opacity: 0 }
+                ], {
+                    duration: 2000 + Math.random() * 3000,
+                    easing: 'cubic-bezier(0.1, 0.8, 0.9, 1)'
+                });
+                
+                animation.onfinish = () => confetti.remove();
+            }
+        });
+    </script>
+</body>
+</html>
