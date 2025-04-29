@@ -128,3 +128,8 @@ So go ahead, [give it a try](https://italianbrainrotclicker.net/). Just don't bl
 And if you see me in the leaderboards (look for "BrainrotBuddy" – yes, I actually created an account), know that I'm clicking alongside you, probably when I should be doing something more productive.
 
 Tralalero tralala, my friends. Tralalero tralala. 
+
+## Other Games
+
+[Crazy Chicken 3D](https://italianbrainrotclicker.net/crazy-chicken-3d/).
+
